@@ -16,6 +16,7 @@ sudo mkdir -p /home/$user/sms/
 sudo cp main.py /home/$user/sms/main.py
 sudo cp sms_lib.py /home/$user/sms/sms_lib.py
 sudo cp Caddyfile /etc/caddy/Caddyfile
+sudo cp smsAPI.service /lib/systemd/system/smsAPI.service
 
 sudo systemctl daemon-reload
 sudo systemctl enable smsAPI
