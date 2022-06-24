@@ -1,0 +1,11 @@
+  [Unit]
+  Description=Rest API to send SMS from a USB 3G
+
+  [Service]
+  Restart=always
+  User=pi
+  WorkingDirectory=/home/pi/sms
+  ExecStart=uvicorn main:app
+
+  [Install]
+  WantedBy=multi-user.target
