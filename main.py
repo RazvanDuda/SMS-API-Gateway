@@ -1,9 +1,11 @@
+import os
 import sms_lib
 from fastapi import FastAPI, Depends
 from fastapi_key_auth import AuthorizerDependency
 from pydantic import BaseModel
 
 
+os.environ['API_KEY'] = 'Test'
 authorizer = AuthorizerDependency(key_pattern="API_KEY")
 
 app = FastAPI(dependencies=[Depends(authorizer)])

@@ -4,8 +4,6 @@
 
 user="pi"
 
-export API_KEY="Test"
-
 wget https://github.com/caddyserver/caddy/releases/download/v2.5.1/caddy_2.5.1_linux_armv7.deb
 sudo dpkg -i caddy_2.5.1_linux_armv7.deb
 
